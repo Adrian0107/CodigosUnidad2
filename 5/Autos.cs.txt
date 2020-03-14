@@ -1,0 +1,125 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Autos
+{
+    class Autos
+    {
+		public Autos(int intNumeroMotor, string strMarca, int intYear, int intPrecio)
+		{
+			intNumeroMotor= NumeroMotor;
+			strMarca=Marca;
+			intYear=Year;
+			intPrecio=Precio;
+		}
+		private int numeroMotor;
+
+		public int NumeroMotor
+		{
+			get { return numeroMotor; }
+			set { numeroMotor = value; }
+		}
+
+		private string marca;
+
+		public string Marca
+		{
+			get { return marca; }
+			set { marca = value; }
+		}
+
+		private int year;
+
+		public int Year
+		{
+			get { return year; }
+			set { year = value; }
+		}
+
+		private int precio;
+
+		public int Precio
+		{
+			get { return precio; }
+			set { precio = value; }
+		}
+    }
+	class AutosCompactos : Autos
+	{
+		public AutosCompactos(int intCantidadPasajeros, int intNumeroMotor, string strMarca, int intYear, int intPrecio) : base(intNumeroMotor, strMarca, intYear, intPrecio);
+		
+			
+		
+	   private int cantidadPasajeros;
+
+		public int CantidadPasajeros
+		{
+			get { return cantidadPasajeros; }
+			set { cantidadPasajeros = value; }
+		}
+		public override string ToString()
+		{
+			return ("Datos del auto: \n \nNumero de serie del motor: " + this.NumeroMotor + " \nMarca: " + this.Marca + "\nAño: " + this.Year + "\nPrecio: "+ this.Precio+ "\nCantidad de pasajeros: "+ this.CantidadPasajeros);
+		}
+
+	}
+	class AutosDeportivos : Autos
+	{
+		public AutosDeportivos(int intCantidadPasajeros, int intNumeroMotor, string strMarca, int intYear, int intPrecio) : base(intNumeroMotor, strMarca, intYear, intPrecio);
+		public override string ToString()
+		{
+			return ("Datos del auto: \n \nNumero de serie del motor: " + this.NumeroMotor + " \nMarca: " + this.Marca + "\nAño: " + this.Year + "\nPrecio: " + this.Precio + "\nCantidad de pasajeros: " + this.CantidadPasajeros );
+		}
+		private int cantidadPasajeros;
+
+		public int CantidadPasajeros
+		{
+			get { return cantidadPasajeros; }
+			set { cantidadPasajeros = value; }
+		}
+	}
+	class Vagonetas : Autos
+	{
+		public Vagonetas(int intCantidadPasajeros, int intNumeroMotor, string strMarca, int intYear, int intPrecio) : base(intNumeroMotor, strMarca, intYear, intPrecio);
+		public override string ToString()
+		{
+			return ("Datos de la vagoneta: \n \nNumero de serie del motor: " + this.NumeroMotor + " \nMarca: " + this.Marca + "\nAño: " + this.Year + "\nPrecio: " + this.Precio + "\nCantidad de pasajeros: " + this.CantidadPasajeros);
+		}
+		private int cantidadPasajeros;
+
+		public int CantidadPasajeros
+		{
+			get { return cantidadPasajeros; }
+			set { cantidadPasajeros = value; }
+		}
+	}
+	class Camionetas : Autos
+	{
+		public Camionetas(int intCapacidadCarga,int intCantidadEjes, int intNumeroMotor, string strMarca, int intYear, int intPrecio) : base(intNumeroMotor, strMarca, intYear, intPrecio);
+		private int capacidadCarga;
+
+		public int CapacidadCarga
+		{
+			get { return capacidadCarga; }
+			set { capacidadCarga = value; }
+		}
+
+		private int cantidadEjes;
+
+		public int CantidadEjes
+		{
+			get { return cantidadEjes; }
+			set { cantidadEjes = value; }
+		}
+		public override string ToString()
+		{
+			return ("Datos de la camioneta: \n \nNumero de serie del motor: " + this.NumeroMotor + " \nMarca: " + this.Marca + "\nAño: " + this.Year + "\nPrecio: " + this.Precio + "\nCapacidad de carga en kgs: " + this.CapacidadCarga+ "\nCantidad de ejes: "+this.CantidadEjes);
+		}
+
+		
+
+	}
+}

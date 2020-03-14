@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Publicacion
+{
+    class Publicacion
+    {
+		
+
+		private string titulo;
+
+		public string Titulo
+		{
+			get { return titulo; }
+			set { titulo = value; }
+		}
+
+		private int precio;
+
+		public int Precio
+		{
+			get { return precio; }
+			set { precio = value; }
+		}
+
+
+
+	}
+	class Libro : Publicacion
+	{
+		private int numPaginas;
+
+		public int NumPaginas
+		{
+			get { return numPaginas; }
+			set { numPaginas = value; }
+		}
+		public override string ToString()
+		{
+			return ("Datos del libro: \n \n El Titulo del libro es: " + this.Titulo + " \n El precio es de: " + this.Precio + "\n con un total de paginas igual a" + this.NumPaginas);
+		}
+
+	}
+	class CD : Publicacion
+	{
+		private int tiempoMinutos;
+
+		public int TiempoMinutos
+		{
+			get { return tiempoMinutos; }
+			set { tiempoMinutos = value; } 
+		}
+		public override string ToString()
+		{
+			return ("Datos del libro: \n \n El Titulo del libro es: " + this.Titulo + " \n El precio es de: " + this.Precio + "\n Total de minutos: " + this.TiempoMinutos);
+		}
+
+	}
+}

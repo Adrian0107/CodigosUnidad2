@@ -1,0 +1,142 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Autos
+{
+    public partial class Form1 : Form
+    {
+        AutosCompactos compactos = new AutosCompactos();
+        AutosDeportivos deportivos = new AutosDeportivos();
+        Vagonetas vagonetas = new Vagonetas();
+        Camionetas camionetas = new Camionetas();
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox6.Enabled = false;
+            textBox7.Enabled = false;
+            textBox5.Enabled = true;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox6.Enabled = false;
+            textBox7.Enabled = false;
+            textBox5.Enabled = true;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox6.Enabled = false;
+            textBox7.Enabled = false;
+            textBox5.Enabled = true;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox6.Enabled = true;
+            textBox7.Enabled = true;
+            textBox5.Enabled = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                compactos.NumeroMotor = int.Parse(textBox1.Text);
+                compactos.Marca = textBox2.Text;
+                compactos.Year = int.Parse(textBox3.Text);
+                compactos.Precio = int.Parse(textBox4.Text);
+                compactos.CantidadPasajeros = int.Parse(textBox5.Text);
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+            }
+            if (radioButton2.Checked == true)
+            {
+                deportivos.NumeroMotor = int.Parse(textBox1.Text);
+                deportivos.Marca = textBox2.Text;
+                deportivos.Year = int.Parse(textBox3.Text);
+                deportivos.Precio = int.Parse(textBox4.Text);
+                deportivos.CantidadPasajeros = int.Parse(textBox5.Text);
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+            }
+            if (radioButton3.Checked == true)
+            {
+                camionetas.NumeroMotor = int.Parse(textBox1.Text);
+                camionetas.Marca = textBox2.Text;
+                camionetas.Year = int.Parse(textBox3.Text);
+                camionetas.Precio = int.Parse(textBox4.Text);
+                camionetas.CapacidadCarga = int.Parse(textBox6.Text);
+                camionetas.CantidadEjes = int.Parse(textBox7.Text);
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
+            }
+            if (radioButton4.Checked == true)
+            {
+                vagonetas.NumeroMotor = int.Parse(textBox1.Text);
+                vagonetas.Marca = textBox2.Text;
+                vagonetas.Year = int.Parse(textBox3.Text);
+                vagonetas.Precio = int.Parse(textBox4.Text);
+                vagonetas.CantidadPasajeros = int.Parse(textBox5.Text);
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                MessageBox.Show(compactos.ToString());
+            }
+            if(radioButton2.Checked==true )
+            {
+                MessageBox.Show(deportivos.ToString());
+            }
+            if (radioButton3.Checked == true)
+            {
+                MessageBox.Show(camionetas.ToString());
+            }
+            if (radioButton4.Checked == true)
+            {
+                MessageBox.Show(vagonetas.ToString());
+            }
+        }
+    }
+}

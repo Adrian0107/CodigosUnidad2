@@ -1,0 +1,9 @@
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\obj\Debug\Departamento.csprojAssemblyReference.cache
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\obj\Debug\Departamento.Form1.resources
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\obj\Debug\Departamento.Properties.Resources.resources
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\obj\Debug\Departamento.csproj.GenerateResource.cache
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\bin\Debug\Departamento.exe.config
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\bin\Debug\Departamento.exe
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\bin\Debug\Departamento.pdb
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\obj\Debug\Departamento.exe
+E:\POO\Visual Studio\Unidad2\Practica 3.2\3\Departamento\obj\Debug\Departamento.pdb

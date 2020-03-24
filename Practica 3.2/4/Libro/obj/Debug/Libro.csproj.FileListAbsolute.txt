@@ -1,0 +1,9 @@
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\bin\Debug\Libro.exe.config
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\bin\Debug\Libro.exe
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\bin\Debug\Libro.pdb
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\obj\Debug\Libro.csprojAssemblyReference.cache
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\obj\Debug\Libro.Form1.resources
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\obj\Debug\Libro.Properties.Resources.resources
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\obj\Debug\Libro.csproj.GenerateResource.cache
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\obj\Debug\Libro.exe
+E:\POO\Visual Studio\Unidad2\Practica 3.2\4\Libro\obj\Debug\Libro.pdb
